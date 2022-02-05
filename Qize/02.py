@@ -18,7 +18,5 @@ for label in labels:
                 cv2.putText(image, l['category'],(int(l['box2d']['x1']),int(l['box2d']['y1'])) ,
                             cv2.FONT_HERSHEY_PLAIN, 1, (0, 255, 0), 2, cv2.LINE_AA)
 
-
-
 cv2.imshow('image', image)  # 창의 제목, 이미지 변수
 cv2.waitKey(0)  # 키를 입력할 때 까지 무한으로 대기
